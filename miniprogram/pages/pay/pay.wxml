@@ -1,13 +1,10 @@
 <view class="pay-page">
-  <!-- Header -->
   <view class="pay-header">
-    <view class="pay-icon">�\udcda</view>
+    <view class="pay-icon">[书]</view>
     <view class="pay-title">解锁完整回忆录</view>
-    <view class="pay-subtitle">传统代写最低1万元
-AI帮您仅需29.9元起</view>
+    <view class="pay-subtitle">传统代写最低1万元，AI帮您仅需29.9元起</view>
   </view>
 
-  <!-- Plans -->
   <view class="pay-plans">
     <view class="plan-card {{item.recommended ? 'recommended' : ''}} {{item.id === 'member' ? 'dashed' : ''}}" 
           wx:for="{{plans}}" wx:key="id"

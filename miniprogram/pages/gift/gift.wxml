@@ -1,8 +1,7 @@
 <view class="gift-page">
-  <view class="gift-icon">��</view>
+  <view class="gift-icon">[礼]</view>
   <view class="gift-title">送给爸妈一份特别的礼物</view>
-  <view class="gift-subtitle">用AI帮父母写一本回忆录
-留下他们一生的故事</view>
+  <view class="gift-subtitle">用AI帮父母写一本回忆录，留下他们一生的故事</view>
 
   <view class="form-group">
     <text class="form-label">父母的名字</text>
@@ -26,5 +25,5 @@
   </view>
 
   <button class="gift-btn" bindtap="createMemoir">创建回忆录 · 29.9元</button>
-  <view class="gift-note">支付后自动生成邀请链接，发给爸妈即可开始
-不满意可申请全额退款</
+  <view class="gift-note">支付后自动生成邀请链接，发给爸妈即可开始；不满意可申请全额退款</view>
+</view>
