@@ -18,7 +18,10 @@
       <view class="chapter-title">{{item.title}}</view>
       <view class="chapter-preview" wx:if="{{item.preview}}">{{item.preview}}</view>
       <view class="chapter-meta" wx:if="{{item.status !== 'locked'}}">
-        <text class="photos">[照] {{item.photos}}张照片</text>
+        <view class="photos">
+          <image src="/images/icon-photo.png" class="photo-icon-img" mode="aspectFit"/>
+          <text>{{item.photos}}张照片</text>
+        </view>
       </view>
     </view>
   </view>

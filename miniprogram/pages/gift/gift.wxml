@@ -1,5 +1,7 @@
 <view class="gift-page">
-  <view class="gift-icon">[礼]</view>
+  <view class="gift-icon">
+    <image src="/images/gift-box.png" class="gift-icon-img" mode="aspectFit"/>
+  </view>
   <view class="gift-title">送给爸妈一份特别的礼物</view>
   <view class="gift-subtitle">用AI帮父母写一本回忆录，留下他们一生的故事</view>
 

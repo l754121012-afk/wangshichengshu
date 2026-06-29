@@ -1,6 +1,8 @@
 <view class="pay-page">
   <view class="pay-header">
-    <view class="pay-icon">[书]</view>
+    <view class="pay-icon">
+      <image src="/images/icon-book-white.png" class="pay-icon-img" mode="aspectFit"/>
+    </view>
     <view class="pay-title">解锁完整回忆录</view>
     <view class="pay-subtitle">传统代写最低1万元，AI帮您仅需29.9元起</view>
   </view>

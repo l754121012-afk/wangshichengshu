@@ -74,3 +74,14 @@
   font-size: 22rpx;
   color: var(--muted);
 }
+
+.photos {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.photo-icon-img {
+  width: 28rpx;
+  height: 28rpx;
+}

@@ -1,15 +1,16 @@
 <view class="chat-page">
-  <!-- Stage Indicator -->
   <view class="stage-bar">
     <text class="stage-item {{item.done ? 'done' : ''}} {{item.current ? 'current' : ''}}" 
           wx:for="{{stages}}" wx:key="name">{{item.name}}</text>
   </view>
 
-  <!-- Messages -->
   <scroll-view class="chat-messages" scroll-y="true" scroll-into-view="msg-bottom">
     <view class="msg {{item.type === 'ai' ? 'msg-ai' : 'msg-user'}}" 
           wx:for="{{messages}}" wx:key="index" id="msg-{{index}}">
-      <view class="msg-avatar">{{item.type === 'ai' ? '[AI]' : '[我]'}}</view>
+      <view class="msg-avatar">
+        <image wx:if="{{item.type === 'ai'}}" src="/images/avatar-ai.png" class="msg-avatar-img" mode="aspectFit"/>
+        <image wx:else src="/images/avatar-user.png" class="msg-avatar-img" mode="aspectFit"/>
+      </view>
       <view class="msg-bubble">
         <text class="msg-text">{{item.text}}</text>
         <view class="msg-voice" wx:if="{{item.type === 'ai'}}">
@@ -29,11 +30,13 @@
     <view id="msg-bottom"></view>
   </scroll-view>
 
-  <!-- Input Area -->
   <view class="chat-input">
     <view class="mic-wrap">
       <button class="mic-btn {{recording ? 'recording' : ''}}" bindtap="toggleMic">
-        <text class="mic-icon">{{recording ? '⏹' : '🎙'}}</text>
+        <view class="mic-icon">
+          <image wx:if="{{recording}}" src="/images/icon-mic-recording.png" class="mic-img" mode="aspectFit"/>
+          <image wx:else src="/images/icon-mic-idle.png" class="mic-img" mode="aspectFit"/>
+        </view>
       </button>
       <text class="mic-hint">{{recording ? '松开结束录音' : '按住说话，松开发送'}}</text>
     </view>

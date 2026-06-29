@@ -1,6 +1,8 @@
 <view class="home-page">
   <view class="home-hero">
-    <view class="logo">[书]</view>
+    <view class="logo">
+      <image src="/images/icon-book.png" class="logo-img" mode="aspectFit"/>
+    </view>
     <view class="home-title">往事成书</view>
     <view class="home-subtitle">{{parentName}}的回忆录</view>
   </view>
@@ -20,26 +22,37 @@
   </view>
 
   <view class="card greeting-card">
-    <view class="ai-badge">[AI] AI采访者</view>
+    <view class="ai-badge">
+      <image src="/images/icon-robot.png" class="ai-badge-img" mode="aspectFit"/>
+      <text>AI采访者</text>
+    </view>
     <text class="greeting-text">{{parentName}}早上好！今天想聊聊您年轻时工作的事情吗？上次您说到在工厂的第一天，后来怎么样了？</text>
   </view>
 
   <button class="big-btn" bindtap="startChat">
-    <text class="btn-icon">[麦]</text>
+    <view class="btn-icon">
+      <image src="/images/icon-mic.png" class="btn-icon-img" mode="aspectFit"/>
+    </view>
     <text>开始讲述</text>
   </button>
 
   <view class="quick-actions">
     <view class="quick-action" bindtap="goMemoir">
-      <view class="quick-icon book">[阅]</view>
+      <view class="quick-icon book">
+        <image src="/images/icon-book-gold.png" class="quick-icon-img" mode="aspectFit"/>
+      </view>
       <text>查看回忆录</text>
     </view>
     <view class="quick-action">
-      <view class="quick-icon camera">[照]</view>
+      <view class="quick-icon camera">
+        <image src="/images/icon-camera.png" class="quick-icon-img" mode="aspectFit"/>
+      </view>
       <text>上传照片</text>
     </view>
     <view class="quick-action">
-      <view class="quick-icon family">[家]</view>
+      <view class="quick-icon family">
+        <image src="/images/icon-family.png" class="quick-icon-img" mode="aspectFit"/>
+      </view>
       <text>邀请家人</text>
     </view>
   </view>

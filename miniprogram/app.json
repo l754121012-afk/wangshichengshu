@@ -21,19 +21,27 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "images/tab_home.png",
+        "selectedIconPath": "images/tab_home_active.png"
       },
       {
         "pagePath": "pages/chat/chat",
-        "text": "聊天"
+        "text": "聊天",
+        "iconPath": "images/tab_chat.png",
+        "selectedIconPath": "images/tab_chat_active.png"
       },
       {
         "pagePath": "pages/memoir/memoir",
-        "text": "回忆录"
+        "text": "回忆录",
+        "iconPath": "images/tab_book.png",
+        "selectedIconPath": "images/tab_book_active.png"
       },
       {
         "pagePath": "pages/pay/pay",
-        "text": "升级"
+        "text": "升级",
+        "iconPath": "images/tab_pay.png",
+        "selectedIconPath": "images/tab_pay_active.png"
       }
     ]
   },
