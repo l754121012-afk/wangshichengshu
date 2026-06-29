@@ -1,0 +1,32 @@
+<view class="pay-page">
+  <!-- Header -->
+  <view class="pay-header">
+    <view class="pay-icon">�\udcda</view>
+    <view class="pay-title">解锁完整回忆录</view>
+    <view class="pay-subtitle">传统代写最低1万元
+AI帮您仅需29.9元起</view>
+  </view>
+
+  <!-- Plans -->
+  <view class="pay-plans">
+    <view class="plan-card {{item.recommended ? 'recommended' : ''}} {{item.id === 'member' ? 'dashed' : ''}}" 
+          wx:for="{{plans}}" wx:key="id"
+          bindtap="selectPlan" data-id="{{item.id}}">
+      <view class="plan-badge" wx:if="{{item.recommended}}">超值推荐</view>
+      <view class="plan-name">{{item.name}}</view>
+      <view class="plan-desc">{{item.desc}}</view>
+      <view class="plan-price">
+        <text class="price-symbol">¥</text>
+        <text class="price-amount">{{item.price}}</text>
+        <text class="price-unit">{{item.unit}}</text>
+        <text class="price-original" wx:if="{{item.original}}">{{item.original}}</text>
+      </view>
+      <view class="plan-features">
+        <view class="feature-item" wx:for="{{item.features}}" wx:for-item="feat" wx:key="*this">
+          <text class="feature-check">✓</text>
+          <text>{{feat}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

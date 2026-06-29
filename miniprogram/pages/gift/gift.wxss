@@ -1,0 +1,99 @@
+.gift-page {
+  min-height: 100vh;
+  background: linear-gradient(170deg, #FDF8F0 0%, #E8D5C4 100%);
+  padding: 40rpx;
+}
+
+.gift-icon {
+  width: 160rpx;
+  height: 160rpx;
+  background: var(--accent);
+  border-radius: 50%;
+  margin: 60rpx auto 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80rpx;
+  box-shadow: 0 16rpx 64rpx rgba(198,93,33,0.2);
+}
+
+.gift-title {
+  text-align: center;
+  font-size: 44rpx;
+  font-weight: 700;
+  margin-bottom: 16rpx;
+}
+
+.gift-subtitle {
+  text-align: center;
+  font-size: 28rpx;
+  color: var(--muted);
+  margin-bottom: 60rpx;
+  line-height: 1.8;
+}
+
+.form-group {
+  margin-bottom: 40rpx;
+}
+
+.form-label {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 16rpx;
+  color: var(--muted);
+}
+
+.form-input {
+  width: 100%;
+  padding: 28rpx 32rpx;
+  border: 2rpx solid var(--rule);
+  border-radius: 24rpx;
+  font-size: 32rpx;
+  background: var(--white);
+  color: var(--ink);
+  box-sizing: border-box;
+}
+
+.relation-select {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16rpx;
+}
+
+.relation-btn {
+  padding: 20rpx 0;
+  border: 2rpx solid var(--rule);
+  border-radius: 20rpx;
+  background: var(--white);
+  font-size: 28rpx;
+  color: var(--ink);
+  text-align: center;
+}
+
+.relation-btn.selected {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.gift-btn {
+  width: 100%;
+  padding: 32rpx;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 28rpx;
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-top: 40rpx;
+  box-shadow: 0 12rpx 48rpx rgba(198,93,33,0.25);
+}
+
+.gift-note {
+  text-align: center;
+  font-size: 22rpx;
+  color: var(--muted);
+  margin-top: 24rpx;
+  line-height: 1.6;
+}

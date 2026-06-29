@@ -1,0 +1,133 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(170deg, var(--bg) 0%, var(--bg3) 100%);
+  padding-bottom: 120rpx;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 40rpx 0 30rpx;
+}
+
+.logo {
+  width: 128rpx;
+  height: 128rpx;
+  background: var(--accent);
+  border-radius: 36rpx;
+  margin: 32rpx auto 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 64rpx;
+  box-shadow: 0 8rpx 32rpx rgba(198,93,33,0.2);
+}
+
+.home-title {
+  font-size: 44rpx;
+  font-weight: 700;
+  margin-bottom: 8rpx;
+}
+
+.home-subtitle {
+  font-size: 26rpx;
+  color: var(--muted);
+  margin-bottom: 40rpx;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.progress-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.progress-num {
+  font-size: 24rpx;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.progress-stages {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: var(--muted);
+}
+
+.progress-stages .stage.done {
+  color: var(--accent2);
+  font-weight: 600;
+}
+
+.progress-stages .stage.current {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.greeting-card {
+  border: 2rpx solid var(--rule);
+  position: relative;
+}
+
+.ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 22rpx;
+  color: var(--accent);
+  background: rgba(198,93,33,0.08);
+  padding: 6rpx 20rpx;
+  border-radius: 40rpx;
+  margin-bottom: 16rpx;
+  font-weight: 600;
+}
+
+.greeting-text {
+  font-size: 32rpx;
+  line-height: 1.7;
+}
+
+.btn-icon {
+  font-size: 56rpx;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24rpx;
+  padding: 0 40rpx;
+}
+
+.quick-action {
+  background: var(--white);
+  border: 2rpx solid var(--rule);
+  border-radius: 28rpx;
+  padding: 32rpx 16rpx;
+  text-align: center;
+}
+
+.quick-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto 12rpx;
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+}
+
+.quick-icon.book { background: rgba(184,134,11,0.1); }
+.quick-icon.camera { background: rgba(46,125,91,0.1); }
+.quick-icon.family { background: rgba(198,93,33,0.1); }
+
+.quick-action text {
+  font-size: 24rpx;
+  font-weight: 600;
+  color: var(--ink);
+}

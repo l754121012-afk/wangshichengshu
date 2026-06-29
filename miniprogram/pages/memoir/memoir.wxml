@@ -1,0 +1,25 @@
+<view class="memoir-page">
+  <!-- Header -->
+  <view class="memoir-header">
+    <view class="memoir-title">{{parentName}}的回忆录</view>
+    <view class="memoir-subtitle">—— 一个普通人的不平凡一生</view>
+  </view>
+
+  <!-- Chapter List -->
+  <view class="chapter-list">
+    <view class="chapter-item {{item.status === 'locked' ? 'locked' : ''}}" 
+          wx:for="{{chapters}}" wx:key="id">
+      <view class="chapter-top">
+        <view class="chapter-num">第{{item.id}}章</view>
+        <view class="tag tag-{{item.status}}">
+          {{item.status === 'complete' ? '已完成' : item.status === 'writing' ? '写作中' : '待解锁'}}
+        </view>
+      </view>
+      <view class="chapter-title">{{item.title}}</view>
+      <view class="chapter-preview" wx:if="{{item.preview}}">{{item.preview}}</view>
+      <view class="chapter-meta" wx:if="{{item.status !== 'locked'}}">
+        <text class="photos">📷 {{item.photos}}张照片</text>
+      </view>
+    </view>
+  </view>
+</view>

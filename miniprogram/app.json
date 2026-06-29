@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/gift/gift",
+    "pages/home/home",
+    "pages/chat/chat",
+    "pages/memoir/memoir",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FDF8F0",
+    "navigationBarTitleText": "往事成书",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FDF8F0"
+  },
+  "tabBar": {
+    "color": "#8B7355",
+    "selectedColor": "#C65D21",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天"
+      },
+      {
+        "pagePath": "pages/memoir/memoir",
+        "text": "回忆录"
+      },
+      {
+        "pagePath": "pages/pay/pay",
+        "text": "升级"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
